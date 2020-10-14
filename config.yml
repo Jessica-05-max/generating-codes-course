@@ -1,0 +1,16 @@
+title: Generating codes
+description: Amazon gift cards
+template:
+  repo: generating-codes-template
+  name: generating-codes
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
